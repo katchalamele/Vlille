@@ -1,13 +1,13 @@
 <?php
 //Auteur: KATCHALA  MELE Daouda et SACI Thileli
 
-$configContext = array(
+/*$configContext = array(
   'http' => array(
     'proxy' => 'tcp://cache.univ-lille1.fr:3128',
     'request_fulluri' => true
   )
 );
-stream_context_set_default($configContext);
+stream_context_set_default($configContext);*/
 
 //renvoie sous forme de tableau les données d'un fichier json
 function json2Tab($json){
@@ -27,9 +27,9 @@ function station2HtmlSmall($station){
   $lat = $station->fields->geo[1];
   $type = $station->fields->type;
   $etat = $station->fields->etat;
-  $etatConnexion = $station->fields->etatConnexion;
-  $nbVelosDispo = $station->fields->nbVelosDispo;
-  $nbPlacesDispo = $station->fields->nbPlacesDispo;
+  $etatConnexion = $station->fields->etatconnexion;
+  $nbVelosDispo = $station->fields->nbvelosdispo;
+  $nbPlacesDispo = $station->fields->nbplacesdispo;
   $res = '<div id = "'.$libelle.'" class = "station" data-libelle = "'.$libelle.'" data-nom ="'.$nom.'" data-commune = "'.$commune.'" data-adresse ="'.$adresse.'" data-lon = "'.$lon.'" data-lat = "'.$lat.'" data-type = "'.$type.'" data-etat = "'.$etat.'" data-etatConnexion = "'.$etatConnexion.'" data-nbVelosDispo = "'.$nbVelosDispo.'" data-nbPlacesDispo = "'.$nbPlacesDispo.'">'."\n";
   $res .= "<span class = \"titre\">".$nom."</span>\n";
   $res .= '<span class = "commune"> Commune: '.$commune.'</span>'."\n";
