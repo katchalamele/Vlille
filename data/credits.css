@@ -1,0 +1,15 @@
+/*Auteurs: KATCHALA MELE Daouda et SACI Thileli*/
+h1{
+  text-align: center;
+  background-color: yellow;
+  border-style: solid;
+  width : 70%;
+  padding-top: 7px;
+  margin-left: 15%;
+  border-radius: 10px;
+
+}
+section{
+  padding-top: 10%;
+  margin-left: 20%;
+}
