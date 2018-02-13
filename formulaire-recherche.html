@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns = "http://www.w3.org/1999/xhtml">
+  <head>
+  <title>Recherche</title>
+  <meta charset="utf-8"/>
+  <meta name = "authors" content = "KATCHALA MELE Daouda et SACI Thileli"/>
+  </head>
+  <body>
+    <h1>Saisissez votre recherche</h1>
+    <p>
+      Cliquez <a href="page_accueuil.php">ici</a> pour retourner sur la page d'accueuil.
+    </p>
+    <form method="get" action="page_accueuil.php">
+      <fieldset>
+        <legend>Nom</legend>
+        <input type="text" name="nom"/>
+      </fieldset>
+      <fieldset>
+        <legend>Commune</legend>
+        <input type="text" name="commune"/>
+      </fieldset>
+      <fieldset>
+        <legend>Nombre minimum de vélos disponible</legend>
+        <input type="number" name="nbVelosDispo" value="0"/>
+      </fieldset>
+      <fieldset>
+        <legend>Nombre minimum de places disponible</legend>
+        <input type="number" name="nbPlacesDispo" value="0"/>
+      </fieldset>
+      <fieldset>
+        <input name="type" type="checkbox" value="AVEC TPE"/>Avec TPE<br/>
+        <input name="etat" type="checkbox" value="EN SERVICE"/>En Service
+      </fieldset>
+      <fieldset>
+        <button type="reset">Effacer</button>
+        <button type="submit" name="valid" value="envoyer">Envoyer</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
